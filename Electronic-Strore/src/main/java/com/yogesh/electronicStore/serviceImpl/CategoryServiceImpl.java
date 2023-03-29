@@ -34,9 +34,9 @@ public class CategoryServiceImpl implements CategoryService {
 
         Category category = this.mapper.map(categoryDto, Category.class);
 
-        Category save = this.categoryRepo.save(category);
+        category.setIsactive(AppConstant.YES);
 
-        save.setIsactive(AppConstant.YES);
+        Category save = this.categoryRepo.save(category);
 
         logger.info("Completion step to save category");
 
@@ -79,7 +79,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     //Get all category
     @Override
-    public CategoryResponse getCategories(Integer pageSize, Integer pageNumber, String sortBy, String sortDir) {
+    public CategoryResponse getCategories(int pageSize, int pageNumber, String sortBy, String sortDir) {
 
         logger.info("Initiating Dao call for get all category");
 

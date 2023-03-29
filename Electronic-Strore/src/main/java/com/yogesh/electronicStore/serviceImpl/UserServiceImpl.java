@@ -110,7 +110,7 @@ public class UserServiceImpl implements UserService {
         return this.UserToDto(userEmail);
     }
     @Override
-    public UserPageableResponse<UserDto> getAllUser(Integer pageSize, Integer pageNumber, String sortBy, String sortDir) {
+    public UserPageableResponse<UserDto> getAllUser(int pageSize, int pageNumber, String sortBy, String sortDir) {
 
         logger.info("Initiating step to get all user");
 

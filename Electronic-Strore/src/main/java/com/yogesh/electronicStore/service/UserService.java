@@ -17,7 +17,7 @@ public interface UserService {
 
     UserDto getUserByEmail(String email);
 
-    UserPageableResponse<UserDto> getAllUser(Integer pageSize, Integer pageNumber, String sortBy, String sortDir);
+    UserPageableResponse<UserDto> getAllUser(int pageSize, int pageNumber, String sortBy, String sortDir);
 
     List<UserDto> searchUser(String keyword);
 }
