@@ -5,7 +5,7 @@ import com.yogesh.electronicStore.helper.Helper;
 import com.yogesh.electronicStore.model.User;
 import com.yogesh.electronicStore.myConfig.AppConstant;
 import com.yogesh.electronicStore.payloads.UserDto;
-import com.yogesh.electronicStore.payloads.UserPageableResponse;
+import com.yogesh.electronicStore.response.UserPageableResponse;
 import com.yogesh.electronicStore.repository.UserRepo;
 import com.yogesh.electronicStore.service.UserService;
 import org.modelmapper.ModelMapper;
@@ -110,7 +110,7 @@ public class UserServiceImpl implements UserService {
         return this.UserToDto(userEmail);
     }
     @Override
-    public UserPageableResponse<UserDto> getAllUser(int pageSize, int pageNumber, String sortBy, String sortDir) {
+    public UserPageableResponse<UserDto> getAllUser(int pageNumber, int pageSize, String sortBy, String sortDir) {
 
         logger.info("Initiating step to get all user");
 

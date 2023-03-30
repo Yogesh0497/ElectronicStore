@@ -4,7 +4,7 @@ import com.yogesh.electronicStore.exception.ResourceNotFoundException;
 import com.yogesh.electronicStore.model.Category;
 import com.yogesh.electronicStore.myConfig.AppConstant;
 import com.yogesh.electronicStore.payloads.CategoryDto;
-import com.yogesh.electronicStore.payloads.CategoryResponse;
+import com.yogesh.electronicStore.response.CategoryResponse;
 import com.yogesh.electronicStore.repository.CategoryRepo;
 import com.yogesh.electronicStore.service.CategoryService;
 import org.modelmapper.ModelMapper;
@@ -79,7 +79,7 @@ public class CategoryServiceImpl implements CategoryService {
 
     //Get all category
     @Override
-    public CategoryResponse getCategories(int pageSize, int pageNumber, String sortBy, String sortDir) {
+    public CategoryResponse getCategories(int pageNumber, int pageSize, String sortBy, String sortDir) {
 
         logger.info("Initiating Dao call for get all category");
 

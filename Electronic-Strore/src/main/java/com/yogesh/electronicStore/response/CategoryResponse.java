@@ -1,5 +1,6 @@
-package com.yogesh.electronicStore.payloads;
+package com.yogesh.electronicStore.response;
 
+import com.yogesh.electronicStore.payloads.CategoryDto;
 import lombok.*;
 
 import java.util.List;

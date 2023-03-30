@@ -1,9 +1,9 @@
 package com.yogesh.electronicStore.controller;
 
 import com.yogesh.electronicStore.myConfig.AppConstant;
-import com.yogesh.electronicStore.payloads.ApiResponse;
+import com.yogesh.electronicStore.response.ApiResponse;
 import com.yogesh.electronicStore.payloads.UserDto;
-import com.yogesh.electronicStore.payloads.UserPageableResponse;
+import com.yogesh.electronicStore.response.UserPageableResponse;
 import com.yogesh.electronicStore.service.FileService;
 import com.yogesh.electronicStore.service.UserService;
 import org.slf4j.Logger;
@@ -72,10 +72,10 @@ public class UserController {
         return new ResponseEntity<>(getUser, HttpStatus.OK);
     }
 
-    @GetMapping("/")
+    @GetMapping("/getAllUser")
     public ResponseEntity<UserPageableResponse<UserDto>> getAllUser
-            (@RequestParam(value="pageSize", defaultValue =AppConstant.PAGE_SIZE, required = true )int pageSize,
-             @RequestParam(value ="pageNumber", defaultValue =AppConstant.PAGE_NUMBER, required = true)int pageNumber,
+            (@RequestParam(value ="pageNumber", defaultValue =AppConstant.PAGE_NUMBER, required = false)int pageNumber,
+             @RequestParam(value ="pageSize", defaultValue =AppConstant.PAGE_NUMBER, required = false)int pageSize,
              @RequestParam(value="sortBy",defaultValue = AppConstant.SORT_BY,required = false)String sortBy,
              @RequestParam(value="sortDir",defaultValue = AppConstant.SORT_DIR,required=false)String sortDir){
 

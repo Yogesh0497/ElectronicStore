@@ -1,9 +1,9 @@
 package com.yogesh.electronicStore.controller;
 
 import com.yogesh.electronicStore.myConfig.AppConstant;
-import com.yogesh.electronicStore.payloads.ApiResponse;
+import com.yogesh.electronicStore.response.ApiResponse;
 import com.yogesh.electronicStore.payloads.CategoryDto;
-import com.yogesh.electronicStore.payloads.CategoryResponse;
+import com.yogesh.electronicStore.response.CategoryResponse;
 import com.yogesh.electronicStore.service.CategoryService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -73,8 +73,8 @@ public class CategoryController {
     }
     @GetMapping("/getAllCategory")
     public ResponseEntity<CategoryResponse> getAllCategory(
-            @RequestParam(value = "pageSize", defaultValue = AppConstant.PAGE_SIZE, required = false) Integer pageSize,
             @RequestParam(value = "pageNumber", defaultValue = AppConstant.PAGE_NUMBER, required = false) Integer pageNumber,
+            @RequestParam(value = "pageSize", defaultValue = AppConstant.PAGE_SIZE, required = false) Integer pageSize,
             @RequestParam(value = "sortBy", defaultValue = AppConstant.SORTED_BY, required = false) String sortBy,
             @RequestParam(value = "sortDir", defaultValue = AppConstant.SORT_DIR, required = false) String sortDir)
     {

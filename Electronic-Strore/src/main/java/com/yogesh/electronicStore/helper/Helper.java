@@ -1,7 +1,7 @@
 package com.yogesh.electronicStore.helper;
 
 import com.yogesh.electronicStore.payloads.UserDto;
-import com.yogesh.electronicStore.payloads.UserPageableResponse;
+import com.yogesh.electronicStore.response.UserPageableResponse;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 

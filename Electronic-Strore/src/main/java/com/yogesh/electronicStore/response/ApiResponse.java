@@ -1,4 +1,4 @@
-package com.yogesh.electronicStore.payloads;
+package com.yogesh.electronicStore.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

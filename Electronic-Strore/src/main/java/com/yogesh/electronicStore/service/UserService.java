@@ -1,7 +1,7 @@
 package com.yogesh.electronicStore.service;
 
 import com.yogesh.electronicStore.payloads.UserDto;
-import com.yogesh.electronicStore.payloads.UserPageableResponse;
+import com.yogesh.electronicStore.response.UserPageableResponse;
 
 import java.util.List;
 

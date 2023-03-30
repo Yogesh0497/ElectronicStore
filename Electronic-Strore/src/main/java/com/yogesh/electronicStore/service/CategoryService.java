@@ -1,7 +1,7 @@
 package com.yogesh.electronicStore.service;
 
 import com.yogesh.electronicStore.payloads.CategoryDto;
-import com.yogesh.electronicStore.payloads.CategoryResponse;
+import com.yogesh.electronicStore.response.CategoryResponse;
 
 
 public interface CategoryService {
@@ -16,7 +16,7 @@ public interface CategoryService {
      CategoryDto getByCategoryId(Long categoryId);
 
      //GetAll
-     //PageableResponse<CategoryDto> getAllCategory(Integer pageSize, Integer pageNumber, String sortBy, String sortDir);
+     //PageableResponse<CategoryDto> getAllCategory(Integer pageNumber, Integer pageSize, String sortBy, String sortDir);
      CategoryResponse getCategories(int pageSize, int pageNumber, String sortBy, String sortDir);
      //Delete
      void deleteByCategoryId(Long categoryId);
