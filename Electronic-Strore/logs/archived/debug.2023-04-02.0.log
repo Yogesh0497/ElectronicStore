@@ -1,0 +1,20 @@
+2023-04-02 10:25:20,632 INFO  StartupInfoLogger:55 - [] Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-DN7R28R with PID 10164 (C:\Users\DELL\Downloads\Electronic Store\Electronic-Strore\target\classes started by DELL in C:\Users\DELL\Downloads\Electronic Store\Electronic-Strore)
+2023-04-02 10:25:20,637 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-02 10:25:20,638 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-02 10:25:28,914 INFO  StartupInfoLogger:61 - [] Started ElectronicStoreApplication in 8.961 seconds (JVM running for 10.654)
+2023-04-02 10:28:50,320 INFO  UserController:82 - [] Initiating request for get all user
+2023-04-02 10:28:50,321 INFO  UserServiceImpl:115 - [] Initiating step to get all user
+2023-04-02 10:28:51,123 INFO  UserServiceImpl:132 - [] Completion step to get all user
+2023-04-02 10:28:51,154 INFO  UserController:86 - [] Completion request for get all user
+2023-04-02 11:55:02,623 INFO  StartupInfoLogger:55 - [] Starting UserControllerTest using Java 17.0.5 on DESKTOP-DN7R28R with PID 16816 (started by DELL in C:\Users\DELL\Downloads\Electronic Store\Electronic-Strore)
+2023-04-02 11:55:02,627 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-02 11:55:02,628 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-02 11:55:02,937 INFO  StartupInfoLogger:61 - [] Started UserControllerTest in 0.978 seconds (JVM running for 6.514)
+2023-04-02 12:08:41,571 INFO  StartupInfoLogger:55 - [] Starting UserControllerTest using Java 17.0.5 on DESKTOP-DN7R28R with PID 28540 (started by DELL in C:\Users\DELL\Downloads\Electronic Store\Electronic-Strore)
+2023-04-02 12:08:41,575 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-02 12:08:41,576 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-02 12:08:41,851 INFO  StartupInfoLogger:61 - [] Started UserControllerTest in 0.736 seconds (JVM running for 2.857)
+2023-04-02 12:08:43,089 INFO  UserController:94 - [] Entering request for get user by email
+2023-04-02 12:08:43,094 INFO  UserController:98 - [] Complete request for get user by email
+2023-04-02 12:08:43,237 INFO  UserController:66 - [] Initiating request for get a user
+2023-04-02 12:08:43,238 INFO  UserController:70 - [] Completion request for get a user

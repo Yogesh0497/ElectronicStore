@@ -46,7 +46,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public CategoryDto update(CategoryDto categoryDto, Long categoryId) {
 
-        logger.info("Initiating step to update category");
+        logger.info("Initiating step to update category{}",categoryId);
 
         Category category = this.categoryRepo.findById(categoryId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.CATEGORY_NOT_FOUND));
@@ -59,7 +59,7 @@ public class CategoryServiceImpl implements CategoryService {
 
         Category update = this.categoryRepo.save(category);
 
-        logger.info("Completion step to update category");
+        logger.info("Completion step to update category{}",categoryId);
 
         return this.mapper.map(update, CategoryDto.class);
     }
@@ -67,19 +67,19 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public CategoryDto getByCategoryId(Long categoryId) {
 
-        logger.info("Initiating step to get category");
+        logger.info("Initiating step to get category{}",categoryId);
 
         Category getCategory = this.categoryRepo.findById(categoryId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.CATEGORY_NOT_FOUND));
 
-        logger.info("Completion step to get category");
+        logger.info("Completion step to get category{}",categoryId);
 
         return this.mapper.map(getCategory, CategoryDto.class);
     }
 
     //Get all category
     @Override
-    public CategoryResponse getCategories(int pageNumber, int pageSize, String sortBy, String sortDir) {
+    public CategoryResponse getAllCategories(int pageNumber, int pageSize, String sortBy, String sortDir) {
 
         logger.info("Initiating Dao call for get all category");
 
@@ -116,7 +116,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public void deleteByCategoryId(Long categoryId) {
 
-        logger.info("Initiating step to delete category");
+        logger.info("Initiating step to delete category{}",categoryId);
 
         Category deleteCategory = this.categoryRepo.findById(categoryId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.CATEGORY_NOT_FOUND));
@@ -125,7 +125,7 @@ public class CategoryServiceImpl implements CategoryService {
 
         this.categoryRepo.save(deleteCategory);
 
-        logger.info("Completion step to delete category");
+        logger.info("Completion step to delete category{}",categoryId);
 
     }
 

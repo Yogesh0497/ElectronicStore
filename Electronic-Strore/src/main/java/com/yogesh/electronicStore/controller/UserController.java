@@ -91,11 +91,11 @@ public class UserController {
     @GetMapping("/email/{email}")
     public ResponseEntity<UserDto> getUserByEmail(@PathVariable String email){
 
-        logger.info("Initiating request for get user by email");
+        logger.info("Entering request for get user by email");
 
         UserDto getUserByEmail = this.userService.getUserByEmail(email);
 
-        logger.info("Initiating request for get user by email");
+        logger.info("Complete request for get user by email");
 
         return new ResponseEntity<>(getUserByEmail, HttpStatus.OK);
     }

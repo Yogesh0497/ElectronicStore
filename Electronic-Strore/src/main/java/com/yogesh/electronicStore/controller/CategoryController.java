@@ -78,7 +78,7 @@ public class CategoryController {
             @RequestParam(value = "sortBy", defaultValue = AppConstant.SORTED_BY, required = false) String sortBy,
             @RequestParam(value = "sortDir", defaultValue = AppConstant.SORT_DIR, required = false) String sortDir)
     {
-        CategoryResponse categories = this.categoryService.getCategories(pageSize, pageNumber, sortBy, sortDir);
+        CategoryResponse categories = this.categoryService.getAllCategories(pageSize, pageNumber, sortBy, sortDir);
 
         return new ResponseEntity<CategoryResponse>(categories,HttpStatus.OK);
     }

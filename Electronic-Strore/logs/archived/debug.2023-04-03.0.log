@@ -1,0 +1,3 @@
+2023-04-03 23:54:56,979 INFO  StartupInfoLogger:55 - [] Starting ElectronicStoreApplication using Java 17.0.5 on DESKTOP-DN7R28R with PID 27388 (C:\Users\DELL\Downloads\Electronic Store\Electronic-Strore\target\classes started by DELL in C:\Users\DELL\Downloads\Electronic Store\Electronic-Strore)
+2023-04-03 23:54:56,985 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-03 23:54:56,986 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"

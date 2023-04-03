@@ -48,7 +48,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto updateUser(UserDto userDto, Long userId) {
 
-        logger.info("Initiating step to update user");
+        logger.info("Initiating step to update user{}",userId);
 
         User user = this.userRepo.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.USER_NOT_FOUND));
@@ -62,7 +62,7 @@ public class UserServiceImpl implements UserService {
 
         User updateUser = userRepo.save(user);
 
-        logger.info("Completion step to update user");
+        logger.info("Completion step to update user{}",userId);
 
         return this.modelMapper.map(updateUser, UserDto.class);
 
@@ -71,7 +71,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUser(Long userId) {
 
-        logger.info("Initiating step to delete user");
+        logger.info("Initiating step to delete user{}",userId);
 
         User deleteUser = this.userRepo.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.USER_NOT_FOUND));
@@ -80,19 +80,19 @@ public class UserServiceImpl implements UserService {
 
         userRepo.save(deleteUser);
 
-        logger.info("Completion step to delete user");
+        logger.info("Completion step to delete user{}",userId);
 
     }
 
     @Override
     public UserDto getUser(Long userId) {
 
-        logger.info("Initiating step to get user");
+        logger.info("Initiating step to get user{}",userId);
 
         User user =  this.userRepo.findById(userId)
                 .orElseThrow(() -> new ResourceNotFoundException(AppConstant.USER_NOT_FOUND));
 
-        logger.info("Completion step to get user");
+        logger.info("Completion step to get {}",userId);
 
         return this.UserToDto(user);
     }

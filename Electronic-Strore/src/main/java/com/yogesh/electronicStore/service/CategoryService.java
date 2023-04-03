@@ -17,7 +17,7 @@ public interface CategoryService {
 
      //GetAll
      //PageableResponse<CategoryDto> getAllCategory(Integer pageNumber, Integer pageSize, String sortBy, String sortDir);
-     CategoryResponse getCategories(int pageSize, int pageNumber, String sortBy, String sortDir);
+     CategoryResponse getAllCategories(int pageSize, int pageNumber, String sortBy, String sortDir);
      //Delete
      void deleteByCategoryId(Long categoryId);
 
