@@ -1,18 +1,26 @@
 package com.yogesh.electronicStore.serviceImpl;
 
 import com.yogesh.electronicStore.exception.ResourceNotFoundException;
+import com.yogesh.electronicStore.model.Category;
 import com.yogesh.electronicStore.model.Product;
 import com.yogesh.electronicStore.myConfig.AppConstant;
+import com.yogesh.electronicStore.payloads.CategoryDto;
 import com.yogesh.electronicStore.payloads.ProductDto;
 import com.yogesh.electronicStore.repository.ProductRepo;
+import com.yogesh.electronicStore.response.CategoryResponse;
 import com.yogesh.electronicStore.response.ProductResponse;
 import com.yogesh.electronicStore.service.ProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
+
 @Slf4j
 @Service
 public class ProductServiceImpl implements ProductService {
@@ -76,10 +84,34 @@ public class ProductServiceImpl implements ProductService {
 
         log.info("Initiating dao step to get all product");
 
+        Sort sort = (sortDir.equalsIgnoreCase("asc"))?Sort.by(sortBy).ascending():Sort.by(sortDir).descending();
 
+        PageRequest page = PageRequest.of(pageNumber, pageSize,sort);
+
+        Page<Product> all = this.productRepo.findAll(page);
+
+        List<Product> content = all.getContent();
+
+        List<ProductDto> collect = content.stream().map((cat) -> this.mapper.map(cat, ProductDto.class))
+                .collect(Collectors.toList());
+
+        ProductResponse productResponse = new ProductResponse();
+
+        productResponse.setContent(collect);
+
+        productResponse.setPageSize(all.getSize());
+
+        productResponse.setPageNumber(all.getNumber());
+
+        productResponse.setTotalElement(all.getTotalElements());
+
+        productResponse.setTotalPage(all.getTotalPages());
+
+        productResponse.setLastPage(all.isLast());
 
         log.info("Completion dao step to get all product");
-        return null;
+
+        return productResponse;
     }
 
     @Override
