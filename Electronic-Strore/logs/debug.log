@@ -6,3 +6,79 @@
 2023-04-04 01:33:50,906 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
 2023-04-04 01:33:50,907 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
 2023-04-04 01:34:00,790 INFO  StartupInfoLogger:61 - [] Started ElectronicStoreApplication in 10.545 seconds (JVM running for 12.226)
+2023-04-20 15:04:39,733 INFO  StartupInfoLogger:55 - [] Starting UserControllerTest using Java 17.0.5 on DESKTOP-DN7R28R with PID 16788 (started by DELL in D:\ElectronicStore\Electronic-Strore)
+2023-04-20 15:04:39,839 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-20 15:04:39,842 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-20 15:04:40,139 INFO  StartupInfoLogger:61 - [] Started UserControllerTest in 1.103 seconds (JVM running for 4.856)
+2023-04-20 15:04:41,128 INFO  UserController:94 - [] Entering request for get user by email
+2023-04-20 15:04:41,132 INFO  UserController:98 - [] Complete request for get user by email
+2023-04-20 15:04:41,221 INFO  UserController:66 - [] Initiating request for get a user
+2023-04-20 15:04:41,222 INFO  UserController:70 - [] Completion request for get a user
+2023-04-20 15:04:41,453 INFO  StartupInfoLogger:55 - [] Starting ElectronicStoreApplicationTests using Java 17.0.5 on DESKTOP-DN7R28R with PID 16788 (started by DELL in D:\ElectronicStore\Electronic-Strore)
+2023-04-20 15:04:41,454 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-20 15:04:41,455 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-20 15:04:47,099 INFO  StartupInfoLogger:61 - [] Started ElectronicStoreApplicationTests in 5.782 seconds (JVM running for 11.817)
+2023-04-20 15:04:47,149 INFO  StartupInfoLogger:55 - [] Starting UserServiceImplTest using Java 17.0.5 on DESKTOP-DN7R28R with PID 16788 (started by DELL in D:\ElectronicStore\Electronic-Strore)
+2023-04-20 15:04:47,150 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-20 15:04:47,150 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-20 15:04:47,166 INFO  StartupInfoLogger:61 - [] Started UserServiceImplTest in 0.046 seconds (JVM running for 11.883)
+2023-04-20 15:04:47,245 INFO  UserServiceImpl:103 - [] Initiating step to get user by email
+2023-04-20 15:04:47,268 INFO  UserServiceImpl:90 - [] Initiating step to get user1
+2023-04-20 15:05:25,400 INFO  StartupInfoLogger:55 - [] Starting UserControllerTest using Java 17.0.5 on DESKTOP-DN7R28R with PID 15784 (started by DELL in D:\ElectronicStore\Electronic-Strore)
+2023-04-20 15:05:25,405 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-20 15:05:25,407 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-20 15:05:25,710 INFO  StartupInfoLogger:61 - [] Started UserControllerTest in 0.668 seconds (JVM running for 1.906)
+2023-04-20 15:05:26,484 INFO  UserController:94 - [] Entering request for get user by email
+2023-04-20 15:05:26,486 INFO  UserController:98 - [] Complete request for get user by email
+2023-04-20 15:05:26,526 INFO  UserController:66 - [] Initiating request for get a user
+2023-04-20 15:05:26,527 INFO  UserController:70 - [] Completion request for get a user
+2023-04-20 15:05:26,592 INFO  StartupInfoLogger:55 - [] Starting UserServiceImplTest using Java 17.0.5 on DESKTOP-DN7R28R with PID 15784 (started by DELL in D:\ElectronicStore\Electronic-Strore)
+2023-04-20 15:05:26,592 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-20 15:05:26,593 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-20 15:05:26,612 INFO  StartupInfoLogger:61 - [] Started UserServiceImplTest in 0.063 seconds (JVM running for 2.809)
+2023-04-20 15:05:26,718 INFO  UserServiceImpl:103 - [] Initiating step to get user by email
+2023-04-20 15:05:26,762 INFO  UserServiceImpl:90 - [] Initiating step to get user1
+2023-04-20 15:40:29,628 INFO  StartupInfoLogger:55 - [] Starting UserServiceImplTest using Java 17.0.5 on DESKTOP-DN7R28R with PID 23440 (started by DELL in D:\ElectronicStore\Electronic-Strore)
+2023-04-20 15:40:29,733 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-20 15:40:29,734 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-20 15:40:36,525 INFO  StartupInfoLogger:61 - [] Started UserServiceImplTest in 7.365 seconds (JVM running for 12.327)
+2023-04-20 15:40:36,597 INFO  UserServiceImpl:35 - [] Initiating step to save user
+2023-04-20 15:40:36,638 INFO  UserServiceImpl:43 - [] Completion step to save user
+2023-04-20 15:40:36,684 INFO  UserServiceImpl:103 - [] Initiating step to get user by email
+2023-04-20 15:40:36,686 INFO  UserServiceImpl:108 - [] Completion step to get user by email
+2023-04-20 15:40:36,705 INFO  UserServiceImpl:51 - [] Initiating step to update user10
+2023-04-20 15:40:36,708 INFO  UserServiceImpl:65 - [] Completion step to update user10
+2023-04-20 15:40:36,718 INFO  UserServiceImpl:51 - [] Initiating step to update user111
+2023-04-20 15:40:36,773 INFO  UserServiceImpl:90 - [] Initiating step to get user10
+2023-04-20 15:40:36,775 INFO  UserServiceImpl:95 - [] Completion step to get 10
+2023-04-20 15:40:36,820 INFO  UserServiceImpl:74 - [] Initiating step to delete user10
+2023-04-20 15:40:36,822 INFO  UserServiceImpl:83 - [] Completion step to delete user10
+2023-04-20 15:40:36,823 INFO  UserServiceImpl:74 - [] Initiating step to delete user111
+2023-04-20 15:41:45,723 INFO  StartupInfoLogger:55 - [] Starting UserServiceImplTest using Java 17.0.5 on DESKTOP-DN7R28R with PID 14016 (started by DELL in D:\ElectronicStore\Electronic-Strore)
+2023-04-20 15:41:45,727 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-20 15:41:45,728 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-20 15:41:52,220 INFO  StartupInfoLogger:61 - [] Started UserServiceImplTest in 6.874 seconds (JVM running for 8.623)
+2023-04-20 15:41:52,296 INFO  UserServiceImpl:35 - [] Initiating step to save user
+2023-04-20 15:41:52,333 INFO  UserServiceImpl:43 - [] Completion step to save user
+2023-04-20 15:46:39,552 INFO  StartupInfoLogger:55 - [] Starting UserServiceImplTest using Java 17.0.5 on DESKTOP-DN7R28R with PID 12896 (started by DELL in D:\ElectronicStore\Electronic-Strore)
+2023-04-20 15:46:39,556 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-20 15:46:39,557 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-20 15:46:45,494 INFO  StartupInfoLogger:61 - [] Started UserServiceImplTest in 6.303 seconds (JVM running for 8.175)
+2023-04-20 15:46:45,588 INFO  UserServiceImpl:35 - [] Initiating step to save user
+2023-04-20 15:46:45,626 INFO  UserServiceImpl:43 - [] Completion step to save user
+2023-04-20 15:46:45,687 INFO  UserServiceImpl:103 - [] Initiating step to get user by email
+2023-04-20 15:46:45,696 INFO  UserServiceImpl:108 - [] Completion step to get user by email
+2023-04-20 15:46:45,725 INFO  UserServiceImpl:51 - [] Initiating step to update user10
+2023-04-20 15:46:45,728 INFO  UserServiceImpl:65 - [] Completion step to update user10
+2023-04-20 15:46:45,737 INFO  UserServiceImpl:51 - [] Initiating step to update user111
+2023-04-20 15:46:45,772 INFO  UserServiceImpl:90 - [] Initiating step to get user10
+2023-04-20 15:46:45,773 INFO  UserServiceImpl:95 - [] Completion step to get 10
+2023-04-20 15:46:45,804 INFO  UserServiceImpl:74 - [] Initiating step to delete user10
+2023-04-20 15:46:45,806 INFO  UserServiceImpl:83 - [] Completion step to delete user10
+2023-04-20 15:46:45,807 INFO  UserServiceImpl:74 - [] Initiating step to delete user111
+2023-04-20 16:01:09,328 INFO  StartupInfoLogger:55 - [] Starting UserServiceImplTest using Java 17.0.5 on DESKTOP-DN7R28R with PID 13412 (started by DELL in D:\ElectronicStore\Electronic-Strore)
+2023-04-20 16:01:09,332 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-20 16:01:09,333 INFO  SpringApplication:631 - [] No active profile set, falling back to 1 default profile: "default"
+2023-04-20 16:01:15,536 INFO  StartupInfoLogger:61 - [] Started UserServiceImplTest in 6.569 seconds (JVM running for 8.377)
+2023-04-20 16:01:15,639 INFO  UserServiceImpl:115 - [] Initiating step to get all user
+2023-04-20 16:01:15,680 INFO  UserServiceImpl:132 - [] Completion step to get all user
